@@ -1,0 +1,9 @@
+cp -R ./yawac/* /
+chmod 644 /etc/config/yawac
+chmod 755 /etc/init.d/yawac /usr/bin/yawac.sh
+
+/etc/init.d/yawac enable
+/etc/init.d/yawac start 
+etc/init.d/yawac stop
+/etc/init.d/yawac disable
+rm -f /etc/config/yawac /etc/init.d/yawac /usr/bin/yawac.sh
